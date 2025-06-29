@@ -11,9 +11,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "rehype-format": "^5.0.1",
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "unified": "^11.0.5"
+    "remark-retext": "^6.0.1",
+    "retext-english": "^5.0.0",
+    "retext-indefinite-article": "^5.0.0",
+    "to-vfile": "^8.0.0",
+    "unified": "^11.0.5",
+    "vfile-reporter": "^8.1.1"
   }
 }
