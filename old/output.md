@@ -1,9 +1,9 @@
-* left
+- left
 
-* right
+- right
 
-* left
+- left
 
-* middle
+- middle
 
-* right
+- right

@@ -21,13 +21,13 @@ export default function remarkGemoji() {
     findAndReplace(tree, [
       /:(\+1|[-\w]+):/g,
       /**
-        * @param {string} _
-        * @param {string} $1
-        * @return {undefined}
-        */
+       * @param {string} _
+       * @param {string} $1
+       * @return {undefined}
+       */
       function (_, $1) {
         return Object.hasOwn(nameToEmoji, $1) ? nameToEmoji[$1] : false
-        }
-      ])
+      }
+    ])
   }
 }

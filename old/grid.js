@@ -9,6 +9,7 @@ const document = await fs.readFile('grid.md', 'utf8')
 const file = await unified()
   .use(remarkParse)
   .use(remarkRehype)
-  .use(rehypeStringify).process(document)
+  .use(rehypeStringify)
+  .process(document)
 
 console.log(String(file))

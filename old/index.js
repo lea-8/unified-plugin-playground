@@ -15,6 +15,7 @@ const file = await unified()
   .use(remarkRehype)
   .use(rehypeSlug)
   .use(rehypeDocument, {title: 'Pluto'})
-  .use(rehypeStringify).process(document)
+  .use(rehypeStringify)
+  .process(document)
 
 console.log(String(file))

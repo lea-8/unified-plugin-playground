@@ -27,20 +27,22 @@ visit(tree, ['comment'], function (node) {
 })
 
 visit(tree, function (node) {
-  if (node.type === 'comment' || node.type === 'text')  {
+  if (node.type === 'comment' || node.type === 'text') {
     console.log([node.value])
   }
 })
 
 visit(tree, function (node) {
-  if (node.type === 'comment' || node.type === 'text')  {
+  if (node.type === 'comment' || node.type === 'text') {
     console.log([node.value])
   }
 })
 visit(tree, function (node) {
-  if (node.type === 'p' || node.type === 'paragraph')  {
-    console.log("---")
-    node.children != undefined ? console.log("---", node.children[0].type) : console.log("--- skip")
+  if (node.type === 'p' || node.type === 'paragraph') {
+    console.log('---')
+    node.children != undefined
+      ? console.log('---', node.children[0].type)
+      : console.log('--- skip')
   }
 })
 
