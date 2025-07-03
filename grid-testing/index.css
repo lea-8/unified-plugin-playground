@@ -1,0 +1,15 @@
+.custom-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.row {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5em;
+}
+.column {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
